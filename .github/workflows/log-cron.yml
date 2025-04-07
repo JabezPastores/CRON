@@ -18,7 +18,7 @@ jobs:
 
       - name: Run logging script
         run: |
-          chmod +x log_time.sh
+          chmod +x log_time.sh count_logs.sh
           ./log_time.sh
           ./count_logs.sh
 
