@@ -2,7 +2,7 @@ name: Log Time Job
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # Runs every 5 minutes
+    - cron: "* * * * *"  # Runs every 5 minutes
 
 jobs:
   log_time:
@@ -19,8 +19,8 @@ jobs:
         
       - name: Commit and push changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "jabez"
+          git config --global user.email "jabezvillanpastores@gmail.com"
           git add log.txt
           git commit -m "Update log file with new timestamp" || echo "No changes to commit"
           git push
